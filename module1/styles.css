@@ -219,23 +219,22 @@ button {
 .features__items__row {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: center;
     row-gap: 30px;
+    column-gap: 140px;
     flex-wrap: wrap;
 }
 
 .features__item {
     background-color: transparent;
     width: 442px;
+    min-height: 358px;
     background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
     position: relative;
     padding: 50px 0px 50px 150px;
-}
-
-.features__item:nth-child(odd) {
-    margin-left: 110px;
+    border-radius: 50px;
 }
 
 .features__item_green {
@@ -511,6 +510,20 @@ button {
     }
 }
 
+@media (max-width: 1200px) {
+    .features {
+        margin-top: 80px;
+    }
+
+    .features__description {
+        max-width: 65%;
+    }
+
+    .features__items {
+        margin-top: 50px;
+    }
+}
+
 @media (max-width: 992px) {
     .header__title {
         width: 100%;
@@ -550,23 +563,53 @@ button {
     .description__wrap {
         width: 100%;
     }
-    
+
     .description__wrapimg {
         width: 100%;
         min-height: 200px;
         margin-top: 20px;
     }
-    
+
     .description__img {
         object-fit: contain;
         object-position: top right;
     }
-    
+
     .description__title {
         font-size: 30px;
         margin-top: 20px;
-    }   
-    
+    }
+
+    .features__description {
+        max-width: 80%;
+    }
+
+    .features__items {
+        row-gap: 0;
+    }
+
+    .features__items__row {
+        row-gap: 0;
+    }
+
+    .features__item {
+        width: 370px;
+        min-height: 370px;
+        padding: 60px 0px 0px 115px;
+    }
+}
+
+@media (max-width: 550px) {
+    .features__img {
+        width: 30%;
+        position: absolute;
+        top: 60%;
+        left: -10%;
+    }
+
+    .features__btn {
+        margin-top: 10px;
+    }
 }
 
 @media (max-width: 480px) {
@@ -579,5 +622,41 @@ button {
         width: 105px;
         height: 38px;
         margin-top: 20px;
+    }
+}
+
+@media (max-width: 430px) {
+    .features__img {
+        display: none;
+    }
+
+    .features__item {
+        width: 100%;
+        padding: 50px 20px 10px;
+        margin: 10px 0;
+    }
+
+    .features__item_green {
+        background-image: none;
+        background-color: rgba(104, 201, 186, 0.1);
+    }
+
+    .features__item_purple {
+        background-image: none;
+        background-color: rgba(156, 105, 226, 0.1);
+    }
+
+    .features__item_pink {
+        background-image: none;
+        background-color: rgba(240, 99, 184, 0.1);
+    }
+
+    .features__item_blue {
+        background-image: none;
+        background-color: rgba(45, 156, 219, 0.1);
+    }
+
+    .features__article {
+        width: 100%;
     }
 }
