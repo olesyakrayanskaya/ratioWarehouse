@@ -456,10 +456,12 @@ button {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
 }
 
 .footer__logo {
-    margin-bottom: 63px;
+    margin-bottom: 60px;
 }
 
 .footer__info {
@@ -486,6 +488,7 @@ button {
 .social__title {
     line-height: 160%;
     font-weight: 900;
+    padding-left: 5px;
 }
 
 .footer__adress {
@@ -698,6 +701,37 @@ button {
 
     .testimonials__slide {
         width: 80%;
+    }
+
+    .footer__wrapper {
+        justify-content: center;
+        padding-top: 40px;
+    }
+
+    .footer__logo {
+        margin-bottom: 20px;
+    }
+
+    .footer__info {
+        justify-content: center;
+    }
+
+    .footer__tel {
+        margin-bottom: 20px;
+    }
+
+    .footer__social {
+        margin-top: 40px;
+        text-align: center;
+        width: 100%;
+    }
+
+    .social__title {
+        padding-left: 0;
+    }
+
+    .social__wrap {
+        justify-content: space-around;
     }
 }
 
