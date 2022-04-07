@@ -53,12 +53,16 @@ button {
     cursor: pointer;
 }
 
+.header__wrapper {
+    height: 100vh;
+}
+
 .header {
     width: 100%;
     flex: 0 0 auto;
     position: relative;
     padding-top: 50px;
-    padding-bottom: 100px;
+    padding-bottom: 200px;
 }
 
 .header__logo {
@@ -148,7 +152,7 @@ button {
     background-color: rgba(240, 99, 184, 0.15);
     border-radius: 50px;
     padding: 10px 90px 100px 10px;
-    margin-top: 90px;
+    margin-top: 40px;
 }
 
 .description__wrap {

@@ -17,25 +17,35 @@
 </head>
 
 <body>
+    <a name="home"></a>
     <div class="wrapper">
-        <header class="header">
-            <nav class="header__nav">
-                <a href=""><img class="header__logo" src="./images/Logo.svg" alt="logo"></a>
-                <ul class="nav">
-                    <li class="nav__item nav__item_active">About</li>
-                    <li class="nav__item">Help</li>
-                    <li class="nav__item">Features</li>
-                </ul>
-            </nav>
-            <h1 class="header__title">Save your data storage here.</h1>
-            <p class="header__description">Data Warehouse is a data storage area that has been tested for
-                security,
-                so
-                you can store your data here safely but not be afraid of being stolen by others.</p>
-            <button class="header__button">Learn more</button>
-            <img class="header__img" src="./images/header_bg.png" alt="">
-        </header>
+        <div class="header__wrapper">
+            <header class="header">
+                <nav class="header__nav">
+                    <a href="#home"><img class="header__logo" src="./images/Logo.svg" alt="logo"></a>
+                    <ul class="nav">
+                        <a href="#description">
+                            <li class="nav__item nav__item_active">About</li>
+                        </a>
+                        <a href="#help">
+                            <li class="nav__item">Help</li>
+                        </a>
+                        <a href="#features">
+                            <li class="nav__item">Features</li>
+                        </a>
+                    </ul>
+                </nav>
+                <h1 class="header__title">Save your data storage here.</h1>
+                <p class="header__description">Data Warehouse is a data storage area that has been tested for
+                    security,
+                    so
+                    you can store your data here safely but not be afraid of being stolen by others.</p>
+                <a href="#features"><button class="header__button">Learn more</button></a>
+                <img class="header__img" src="./images/header_bg.png" alt="">
+            </header>
+        </div>
         <div class="content__wrapper">
+            <a name="description"></a>
             <section class="description">
                 <div class="description__wrapimg">
                     <img class="description__img" src="./images/article_img.png" alt="">
@@ -50,7 +60,7 @@
                         enter the password that you created when you registered in this Data Warehouse.</p>
                 </div>
             </section>
-            <section class="features">
+            <section class="features"><a name="features"></a>
                 <h2 class="features__title">Features</h2>
                 <p class="features__description">Some of the features and advantages that we provide for those of you
                     who store data in this Data Warehouse.</p>
@@ -174,9 +184,10 @@
         </div>
     </div>
     <footer class="footer">
+        <a name="help"></a>
         <div class="footer__wrapper">
             <div class="footer__info">
-                <a href=""><img class="footer__logo" src="./images/Logo_footer.svg" alt="logo"></a>
+                <a href="#home"><img class="footer__logo" src="./images/Logo_footer.svg" alt="logo"></a>
                 <span class="footer__adress">Warehouse Society,</span>
                 <span class="footer__adress"> Bahagia Ave Street PRBW 29281</span>
                 <a href="mailto:"><span class="footer_mail">info@warehouse.project</span></a>
@@ -187,13 +198,13 @@
             <div class="footer__social">
                 <span class="social__title">Social Media</span>
                 <div class="social__wrap">
-                    <a href="http://" target="_blank" rel="noopener noreferrer">
+                    <a href="https://www.instagram.com/" target="_blank">
                         <img class="social__icon" src="./images/icons8-instagram.svg" alt="">
                     </a>
-                    <a href="http://" target="_blank" rel="noopener noreferrer">
+                    <a href="https://vk.com/" target="_blank">
                         <img class="social__icon" src="./images/icons8-vk-circled.svg" alt="">
                     </a>
-                    <a href="http://" target="_blank" rel="noopener noreferrer">
+                    <a href="https://www.whatsapp.com/" target="_blank">
                         <img class="social__icon" src="./images/icons8-whatsapp.svg" alt="">
                     </a>
                 </div>
