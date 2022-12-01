@@ -347,6 +347,7 @@ button {
     line-height: 130%;
     font-weight: 700;
     color: #ffffff;
+    margin-bottom: 80px;
 }
 
 .testimonials__slides {
@@ -355,7 +356,6 @@ button {
     justify-content: flex-start;
     column-gap: 20px;
     width: 100vw;
-    padding-top: 80px;
 }
 
 .testimonials__slide {
@@ -375,6 +375,7 @@ button {
 .testimonials__slide_active {
     flex-shrink: 0;
     width: 645px;
+    transition: width 1s ease-in;
 }
 
 .testimonials__avatar {
