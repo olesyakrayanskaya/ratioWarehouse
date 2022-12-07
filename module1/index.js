@@ -3,7 +3,16 @@ const slides = document.querySelectorAll('.testimonials__slide')
 const sliderDots = document.querySelectorAll('.testimonial__dot')
 const arrLeft = document.querySelector('.testimonials__btn-left')
 const arrRight = document.querySelector('.testimonials__btn-right')
+const arrowPageUp = document.querySelector('.body__arrow')
 let slideNumber = 0
+
+document.body.addEventListener('scroll', function () {
+    if (document.body.scrollTop > 20) {
+        arrowPageUp.style.opacity = "30%"
+    } else {
+        arrowPageUp.style.opacity = "0"
+    }
+})
 
 function initActivSlide(n) {
     for (let i = 0; i < slides.length; i++) {
