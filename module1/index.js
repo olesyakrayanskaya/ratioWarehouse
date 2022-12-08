@@ -74,9 +74,9 @@ arrLeft.addEventListener('click', function () {
     slideLeft(slides)
     if (window.matchMedia('(min-width: 993px)').matches) {
         let i = findActiveSlide()
-        let shiftSlides = i * (-1 * slides[i].offsetWidth) + 'px'
+        let shiftSlides = i * (-0.85 * slides[i].offsetWidth) + 'px'
         slidesContainer.style.transform = "translateX(" + shiftSlides + ")"
-        slidesContainer.style.transition = "transform 1s ease-in"
+        slidesContainer.style.transition = "transform 1.5s ease-in 0.7s"
     }
     if (window.matchMedia('(max-width: 992px)').matches) {
         let i = findActiveSlide()
@@ -94,7 +94,7 @@ arrRight.addEventListener('click', function () {
         }
         let shiftSlides = i * (-1 * slides[i].offsetWidth) + 'px'
         slidesContainer.style.transform = "translateX(" + shiftSlides + ")"
-        slidesContainer.style.transition = "transform 1s ease-in"
+        slidesContainer.style.transition = "transform 1.5s ease-in 0.5s"
         if (i <= 0) {
             slides[0].classList.add('testimonials__slide_large-animated-right')
         }
